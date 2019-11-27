@@ -1,5 +1,9 @@
 # Image Downloader For Instagram [<img align="right" src=".github/fxaddon.png">](https://addons.mozilla.org/firefox/addon/image-downloader-1/)
 
+This free browser extension adds a download button to posts on the popular social media website, Instagram. This gives you the ability to download content directly to your computer using Firefox.
+
+**Note:** This browser extension is unofficial and is in no way affiliated with Instagram.
+
 ## Development
 This repository contains all of the required source code files to make changes to this extension. The "master" branch contains the source code for the latest stable release. If you want to test that version, you can view the release section to download the XPI file or visit the add-on listing on Mozilla.
 
