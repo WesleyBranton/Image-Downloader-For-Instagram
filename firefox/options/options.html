@@ -1,0 +1,32 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at https://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../lib/new_browser_style.css">
+    </head>
+    <body class="browser-style">
+        <form name="settings">
+            <section class="panel-section has-help">
+                <label>Show save dialog</label>
+                <div>
+                    <label><input type="radio" name="saveDialog" value="show" checked> Show</label>
+                    <label><input type="radio" name="saveDialog" value="hide"> Hide</label>
+                </div>
+            </section>
+            <section class="help-row">
+                This dialog window allows you to name the image and choose where to save it
+            </section>
+            <div class="panel-section-separator"></div>
+            <section class="panel-section has-help">
+                <label>End-User License Agreement</label>
+                <div>
+                    <a href="https://addons.mozilla.org/firefox/addon/image-downloader/eula/" target="_blank">Read Agreement</a>
+                </div>
+            </section>
+        </form>
+        <script src="options.js"></script>
+    </body>
+</html>

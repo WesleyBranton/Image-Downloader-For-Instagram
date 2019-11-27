@@ -1,0 +1,51 @@
+{
+    "manifest_version": 2,
+    "name": "Image Downloader for Instagram",
+    "version": "1.0",
+    "description": "Save images from the popular social media website, Instagram",
+    "author": "Wesley Branton",
+    "homepage_url": "https://github.com/WesleyBranton/Image-Downloader-For-Instagram",
+
+    "developer": {
+        "name": "Wesley Branton",
+        "url": "http://addons.wesleybranton.com"
+    },
+    
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "imagedownloader@computerwhiz",
+            "strict_min_version": "57.0"
+        }
+    },
+
+    "icons": {
+        "32": "icons/icon-32.png",
+        "48": "icons/icon-48.png",
+        "64": "icons/icon-64.png",
+        "96": "icons/icon-96.png",
+        "128": "icons/icon-128.png"
+    },
+
+    "background": {
+        "scripts": ["background.js"]
+    },
+    
+    "options_ui": {
+        "page": "options/options.html",
+        "browser_style": false
+    },
+    
+    "content_scripts": [
+        {
+            "matches": ["*://*.instagram.com/*"],
+            "js": [
+                "scripts/general.js"
+            ]
+        }
+    ],
+    
+    "permissions": [
+        "downloads",
+        "storage"
+    ]
+}
